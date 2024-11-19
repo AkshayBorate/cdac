@@ -1,0 +1,17 @@
+<script>
+  var number = [10, 121, 95, 65, 40];
+  let max = 0;
+  let smax = 0;
+
+  for (let num of number) {
+    if (max < num) {
+      smax = max;
+      max = num;
+    } else if (smax < num) {
+      smax = num;
+    }
+  }
+
+  console.log("The maximum number is: " + max);
+  console.log("The second maximum number is: " + smax);
+</script>

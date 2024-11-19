@@ -1,0 +1,6 @@
+{
+  "name": "Akshay",
+  "Age": "22",
+  "Hobbie": ["Cricket", "Movies"],
+  "place": { "Location": "pune", "Pincode": 413132 }
+}

@@ -1,0 +1,13 @@
+<div style="border: solid; padding: 20px; width: 200px">
+  <button>Login</button>
+</div>
+
+<script>
+  document.querySelector("div").style.display = "none";
+  setTimeout(function () {
+    document.querySelector("div").style.display = "block";
+    setTimeout(function () {
+      document.querySelector("div").style.display = "none";
+    }, 1000);
+  }, 1000);
+</script>

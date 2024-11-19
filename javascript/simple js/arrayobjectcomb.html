@@ -1,0 +1,45 @@
+<script>
+  "use strict";
+  var product = [
+    {
+      name: "Shirt",
+      price: 1000,
+      size: ["S", "M", "L"],
+      path: "https://wrogn.com/cdn/shop/files/VM3.jpg?v=1730264625",
+    },
+    {
+      name: "Shirt",
+      price: 899,
+      size: ["S", "M", "L"],
+      path: "https://wrogn.com/cdn/shop/files/VM3.jpg?v=1730264625",
+    },
+    {
+      name: "Shirt",
+      price: 1999,
+      size: ["S", "M", "L"],
+      path: "https://wrogn.com/cdn/shop/files/VM3.jpg?v=1730264625",
+    },
+  ];
+  for (let products of product) {
+    document.write(`
+  <div>
+    <img src="${products.path}" alt="">
+    <h2>${products.price}</h2>
+    <p>${products.name}</p>
+    <h3>${products.size}</h3>
+    
+</div>
+  `);
+  }
+  console.log(product);
+</script>
+<style>
+  div {
+    float: left;
+    /* display: inline-flex; */
+  }
+  div img {
+    padding: 25px;
+    width: 400px;
+  }
+</style>

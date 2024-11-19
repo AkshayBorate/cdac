@@ -1,0 +1,39 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <input type="text" class="x3" /> -->
+
+<!-- <input type="text " class="x2" />
+  -->
+<p id="p2"></p>
+<button class="btn">reload</button>
+<input type="text" class="x1" />
+
+<button class="btn2">check</button>
+<h4 id="p1"></h4>
+<script>
+  //   var v1 = document.getElementsByClassName("x1").value();
+
+  $(".btn").click(function () {
+    var x1 = Math.random();
+    x1 = Math.ceil(x1 * 10);
+    console.log(x1);
+
+    var x2 = Math.random();
+    x2 = Math.ceil(x2 * 10);
+    $("p").html(x1 + "+" + x2);
+    var sum = x1 + x2;
+    console.log(sum);
+
+    $(".btn2").click(function () {
+      var v1 = $(".x1").val();
+      console.log(v1);
+      var msg;
+      if (v1 == sum) {
+        msg = "valid";
+      } else {
+        msg = "not valid";
+      }
+      $("#p1").html(msg);
+    });
+  });
+</script>

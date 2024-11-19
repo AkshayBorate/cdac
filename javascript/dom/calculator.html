@@ -1,0 +1,67 @@
+<html>
+  <head> </head>
+  <body>
+    <input type="text" id="i1" />
+    <input type="text" id="i2" />
+    <button id="x1">+</button>
+    <button id="x2">-</button>
+    <button id="x3">*</button>
+    <button id="x4">/</button>
+    <input type="text" id="s1" />
+    <!-- <p>Calculation is <span id="s1"></span></p> -->
+  </body>
+</html>
+<script>
+  function calculator(operator) {
+    var data1 = document.getElementById("i1").value;
+    var data2 = document.getElementById("i2").value;
+
+    var p = parseInt(data1);
+    var q = parseInt(data2);
+
+    var res;
+    switch (operator) {
+      case "+":
+        res = p + q;
+        break;
+      case "-":
+        res = p - q;
+        break;
+      case "*":
+        res = p * q;
+        break;
+      case "/":
+        res = p / q;
+        break;
+    }
+    document.getElementById("s1").value = res;
+  }
+  document.getElementById("x1").onclick = function () {
+    calculator("+");
+  };
+  document.getElementById("x2").onclick = function () {
+    calculator("-");
+  };
+  document.getElementById("x3").onclick = function () {
+    calculator("*");
+  };
+  document.getElementById("x4").onclick = function () {
+    calculator("/");
+  };
+</script>
+<style>
+  button {
+    width: 60px;
+    background-color: antiquewhite;
+    color: black;
+    padding: 5px;
+    border-radius: 2rem;
+  }
+  input {
+    width: 200px;
+    background-color: antiquewhite;
+    color: black;
+    padding: 5px;
+    border-radius: 2rem;
+  }
+</style>

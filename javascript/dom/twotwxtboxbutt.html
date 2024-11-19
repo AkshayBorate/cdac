@@ -1,0 +1,54 @@
+<html>
+  <head> </head>
+  <body>
+    <input type="text" id="i1" />
+    <input type="text" id="i2" />
+    <button id="x1">+</button>
+    <button id="x2">-</button>
+    <button id="x3">*</button>
+    <button id="x4">/</button>
+    <p>Calculation is <span id="s1"></span></p>
+  </body>
+</html>
+<script>
+  document.getElementById("x1").onclick = function () {
+    var data1 = document.getElementById("i1").value;
+    var data2 = document.getElementById("i2").value;
+
+    var p = parseInt(data1);
+    var q = parseInt(data2);
+
+    var res = p + q;
+    document.getElementById("s1").innerHTML = res;
+  };
+  document.getElementById("x2").onclick = function () {
+    var data1 = document.getElementById("i1").value;
+    var data2 = document.getElementById("i2").value;
+
+    var p = parseInt(data1);
+    var q = parseInt(data2);
+
+    var res = p - q;
+    document.getElementById("s1").innerHTML = res;
+  };
+  document.getElementById("x3").onclick = function () {
+    var data1 = document.getElementById("i1").value;
+    var data2 = document.getElementById("i2").value;
+
+    var p = parseInt(data1);
+    var q = parseInt(data2);
+
+    var res = p * q;
+    document.getElementById("s1").innerHTML = res;
+  };
+  document.getElementById("x4").onclick = function () {
+    var data1 = document.getElementById("i1").value;
+    var data2 = document.getElementById("i2").value;
+
+    var p = parseInt(data1);
+    var q = parseInt(data2);
+
+    var res = p / q;
+    document.getElementById("s1").innerHTML = res;
+  };
+</script>

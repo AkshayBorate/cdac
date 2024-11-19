@@ -1,0 +1,32 @@
+<script>
+  var regularexp = /^[0-9][0-9][0-9][0-9][0-9][0-9]$/;
+  var pincode = 413102;
+  var resuult = regularexp.test(pincode);
+  console.log(resuult);
+
+  var expl = /^[6-9][0-9]{9}$/;
+  var mobile = 9112959661;
+  var result = expl.test(mobile);
+  console.log(result);
+
+  var exp2 = /^([a-zA-Z]{5})([0-9]{4})([a-zA-z])$/;
+  var pan = "GICPB4594Q";
+  var res = exp2.test(pan);
+  console.log(res);
+
+  var exp3 = /^[a-zA-Z]([a-zA-Z]+)?[a-zA-Z]$/;
+  var name = "Akshay Balu Borate";
+  var res1 = exp3.test(name);
+  console.log(res1);
+
+  var exp4 = /^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/;
+  var email = "akshayb1905@gmail.com";
+  var res2 = exp4.test(email);
+  console.log(res2);
+
+  var exp5 = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$]).{4,12}$/;
+
+  var pass = "ABorate@1905";
+  var res3 = exp5.test(pass);
+  console.log(res3);
+</script>

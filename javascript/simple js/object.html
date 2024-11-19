@@ -1,0 +1,26 @@
+<script>
+  var product = {
+    name: "Shirt",
+    price: 1000,
+    size: ["S", "M", "L"],
+    path: "https://wrogn.com/cdn/shop/files/VM3.jpg?v=1730264625",
+  };
+  document.write(`
+  <div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+</div>
+  `);
+  console.log(product);
+</script>
+<style>
+  div {
+    width: 200px;
+    margin: auto;
+    height: 100px;
+  }
+  div img {
+    width: 200px;
+  }
+</style>

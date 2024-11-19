@@ -1,0 +1,8 @@
+<div></div>
+<script>
+  setInterval(function () {
+    var record = new Date();
+    console.log(record);
+    document.querySelector("div").innerHTML = record.toLocaleString();
+  }, 1000);
+</script>

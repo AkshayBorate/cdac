@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<button>Submit</button>
+
+<script>
+  document.addEventListener("click", () => {
+    // console.log(axios);
+    var result = axios.get("http://localhost:9000/users");
+    console.log(result);
+
+    result.then((value) => {
+      console.log(value.data);
+    });
+  });
+</script>

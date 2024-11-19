@@ -1,0 +1,17 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<input type="checkbox" id="x1" />
+<input type="password" id="x2" />
+
+<script>
+  $("#x1").change(function () {
+    var result = $(this).is(":checked"); // Jquery is acting as a result
+    console.log(result);
+
+    if (result) {
+      $("#x2").attr("type", "text");
+    } else {
+      $("#x2").attr("type", "password");
+    }
+  });
+</script>

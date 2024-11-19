@@ -1,0 +1,15 @@
+<script>
+  let record = new Promise((res, rej) => {
+    console.log(typeof res, typeof rej);
+    // res("APi CAlled");
+    rej("API failed");
+  });
+  console.log(record);
+
+  record.then((data) => {
+    console.log(data);
+  });
+  record.catch((data) => {
+    console.log(data);
+  });
+</script>
